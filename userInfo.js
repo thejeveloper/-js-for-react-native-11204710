@@ -25,7 +25,7 @@ function createUserProfiles(names, processedNumbers) {
 }
 
 
-const names = ["James", "Leslie", "Oswald", "Terrence", ""];
+const names = ["James", "Leslie", "Oswald", "Terrence", "Reiss"];
 const numbers = [1, 2, 3, 4, 5];
 const processedNumbers = processArray(numbers);
 const userProfiles = createUserProfiles(names, processedNumbers);
