@@ -1,9 +1,9 @@
 function processArray(arr) {
     return arr.map(num => {
         if (num % 2 === 0) {
-            return num * num; // square the even numbers
+            return num * num;
         } else {
-            return num * 3; // triple the odd numbers
+            return num * 3; 
         }
     });
 }
@@ -12,9 +12,9 @@ function createUserProfiles(names, processedNumbers) {
     return names.map((name, index) => {
         let modifiedName;
         if (processedNumbers[index] % 2 === 0) {
-            modifiedName = name.toUpperCase(); // capitalize if even
+            modifiedName = name.toUpperCase();
         } else {
-            modifiedName = name.toLowerCase(); // lowercase if odd
+            modifiedName = name.toLowerCase(); 
         }
         return {
             id: index + 1,
@@ -24,8 +24,8 @@ function createUserProfiles(names, processedNumbers) {
     });
 }
 
-// Example usage:
-const names = ["Alice", "Bob", "Charlie", "David", "Eve"];
+
+const names = ["James", "Leslie", "Oswald", "Terrence", ""];
 const numbers = [1, 2, 3, 4, 5];
 const processedNumbers = processArray(numbers);
 const userProfiles = createUserProfiles(names, processedNumbers);
